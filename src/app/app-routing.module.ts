@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'add-associado',
     loadChildren: () => import('./paginas/associado/add-associado/add-associado.module').then( m => m.AddAssociadoPageModule)
+  },
+  {
+    path: 'sel-equipamento',
+    loadChildren: () => import('./paginas/equipamento/sel-equipamento/sel-equipamento.module').then( m => m.SelEquipamentoPageModule)
+  },
+  {
+    path: 'add-edit-equipamento/:id',
+    loadChildren: () => import('./paginas/equipamento/add-edit-equipamento/add-edit-equipamento.module').then( m => m.AddEditEquipamentoPageModule)
+  },
+  {
+    path: 'add-edit-equipamento-item',
+    loadChildren: () => import('./paginas/equipamento/add-edit-equipamento-item/add-edit-equipamento-item.module').then( m => m.AddEditEquipamentoItemPageModule)
   }
 ];
 
