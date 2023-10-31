@@ -8,6 +8,8 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
 
+  imagensGrid!: any[];
+
   constructor(public nav: NavController) { }
 
   equipamentos(){
@@ -19,6 +21,27 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit() {
+    this.imagensGrid = [
+      {
+        img: 'assets/dashboard/disabled.png',
+        name: 'Equipamento'
+      },
+      {
+        img: 'assets/dashboard/add.png',
+        name: 'Item de Equipamento'
+      },
+      {
+        img: 'assets/dashboard/adult-diapers.png',
+        name: 'Fraldas'
+      },
+      {
+        img: 'assets/dashboard/loan.png',
+        name: 'Emprestimos'
+      }
+    ]
+  }
+
+  navegacao(){
   }
 
 }
